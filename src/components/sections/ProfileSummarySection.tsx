@@ -3,11 +3,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import GmailIcon from '@/components/svg/gmail';
+import Section from './Section';
 
-const iconClasses = 'h-6 w-6 hover:text-blue-400 hover:scale-125 duration-200';
+const iconClasses = 'h-6 w-6 hover:text-teal-500 hover:scale-125 duration-300';
 
 const ProfileSummarySection = () => (
-  <>
+  <Section>
     <div className='mb-8'>
       <h1 className='font-bold tracking-tight sm:text-5xl'>Sabino Alejandro</h1>
       <h1 className='font-bold tracking-tight sm:text-5xl'>
@@ -43,7 +44,7 @@ const ProfileSummarySection = () => (
         </li>
       </ul>
     </div>
-  </>
+  </Section>
 );
 
 export default ProfileSummarySection;

@@ -1,12 +1,12 @@
 import { FC, ReactNode } from 'react';
 
 interface MyComponentProps {
-  children: ReactNode;
+  name: string;
 }
 
-const HeaderSection: FC<MyComponentProps> = ({ children }) => (
-  <div className='sticky top-0 z-20 -mx-6 mb-4 w-screen bg-slate-900/75 px-6 py-5 backdrop-blur md:-mx-12 md:px-12'>
-    {children}
+const HeaderSection: FC<MyComponentProps> = ({ name }) => (
+  <div className='sticky top-0 z-20  bg-light-blue-600/75 backdrop-blur mb-4 py-5 px-6 -mx-6 md:-mx-12 md:px-12'>
+    <h2 className='uppercase'>{name}</h2>
   </div>
 );
 

@@ -1,7 +1,7 @@
 import PropTypes, { InferProps } from 'prop-types';
 import { SVGAttributes } from 'react';
 
-function GmailIcon({ fill = '#fff', ...props }: SVGAttributes<SVGElement>) {
+function GmailIcon({ fill = 'currentColor', ...props }: SVGAttributes<SVGElement>) {
   return (
     <svg
       xmlns='http://www.w3.org/2000/svg'

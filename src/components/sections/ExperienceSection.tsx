@@ -1,5 +1,6 @@
 import ExperienceCard from '../ExperienceCard';
 import HeaderSection from './HeaderSection';
+import Section from './Section';
 
 const ExperienceSection = () => {
   const experiences = [
@@ -18,17 +19,13 @@ const ExperienceSection = () => {
   ];
 
   return (
-    <>
-      <HeaderSection>
-        <h2 className='uppercase'>Experience</h2>
-      </HeaderSection>
-
+    <Section headerName='Experience'>
       <ol>
         {experiences.map((experience) => (
           <ExperienceCard key={experience.name} {...experience} />
         ))}
       </ol>
-    </>
+    </Section>
   );
 };
 

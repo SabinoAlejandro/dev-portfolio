@@ -12,9 +12,9 @@
 
 @layer base {
   h1 {
-    @apply text-4xl text-slate-200;
+    @apply text-4xl text-ocean-blue-500;
   }
   h2 {
-    @apply text-sm text-slate-200 font-bold;
+    @apply text-sm text-ocean-blue-500 font-bold;
   }
 }
